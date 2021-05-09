@@ -45,7 +45,7 @@ export default function () {
   if (res.status == 200) {
     durTrend.add(res.timings.duration, { 'interval': Math.floor(((new Date()) - startTime) / 60000).toString() })
   }
-  sleep(1);
+  // sleep(1); // Add this if you want gap between requests
 }
 
 export function handleSummary(data) {
