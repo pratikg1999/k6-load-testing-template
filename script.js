@@ -15,6 +15,17 @@ let reqCounter = new Counter('reqCounter');
 const startTime = new Date();
 
 export const options = {
+  // Example scenrio which maintains constant response rate
+  // scenarios: {
+  //   constant_request_rate: {
+  //     executor: "constant-arrival-rate",
+  //     rate: 5,
+  //     timeUnit: "1s", // 5 iterations per second, i.e. 5 RPS
+  //     duration: "1m",
+  //     preAllocatedVUs: 5, // how large the initial pool of VUs would be
+  //     // maxVUs: 15, // if the preAllocatedVUs are not enough, we can initialize more
+  //   },
+  // },
   vus: VUS,
   duration: DURATION,
   // iterations: 10,
